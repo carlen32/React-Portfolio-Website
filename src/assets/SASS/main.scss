@@ -1,0 +1,12 @@
+@import './config';
+@import '../../components/about/about';
+@import '../../components/contact/contact';
+@import '../../components/experience/experience';
+@import '../../components/testimonials/testimonials';
+@import '../../components/header/header';
+@import '../../components/footer/footer';
+
+body{
+    background-color: black;
+    color: white;
+}
