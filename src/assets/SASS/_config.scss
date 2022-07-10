@@ -73,5 +73,43 @@ a {
   &:hover {
     color: $color;
     background-color: $background;
+    border-color: transparent;
   }
 }
+
+.btn-primary {
+    background-color: $primary;
+    color: $background;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+// media queries medium devices 
+
+@media (max-width: 1024px) {
+  .container{
+    width: $container-w-md;
+  }
+
+  section{
+    margin-top: 6rem;
+  }
+
+}
+
+// media queries small devices
+@media (max-width: 600px) {
+    .container{
+      width: $container-w-ms;
+    }
+  
+    section > h2{
+      margin-bottom: 2rem;
+    }
+  
+  }
