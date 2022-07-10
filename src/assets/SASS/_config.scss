@@ -1,0 +1,77 @@
+// colors
+$background: #1f1f38;
+$background-variant: #2c2c6c;
+$primary: #4db5ff;
+$primary-variant: rgba(77, 181, 255, 0.4);
+$color: #fff;
+$light: rgba(255, 255, 255, 0.6);
+
+// width of the container
+$container-w-lg: 75%;
+$container-w-md: 86%;
+$container-w-ms: 90%;
+
+// Mixing it up
+@mixin transition1 {
+  transition: all 400ms ease;
+}
+
+// General  Styles
+
+.container {
+  width: $container-w-lg;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+  section > h2 section > h5 {
+    text-align: center;
+    color: $light;
+  }
+  section > h2 {
+    color: $primary;
+    margin-bottom: 3rem;
+  }
+}
+
+.text-light {
+  color: $light;
+}
+
+a {
+  color: $primary;
+  @include transition1();
+
+  &:hover {
+    color: $color;
+  }
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $primary;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $primary;
+  @include transition1();
+
+  &:hover {
+    color: $color;
+    background-color: $background;
+  }
+}
