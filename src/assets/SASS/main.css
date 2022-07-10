@@ -34,7 +34,7 @@ section section > h2 {
 
 a {
   color: #4db5ff;
-  transition: all 400ms ease;
+  transition: all 1s ease;
 }
 a:hover {
   color: #fff;
@@ -50,7 +50,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid #4db5ff;
-  transition: all 400ms ease;
+  transition: all 1s ease;
 }
 .btn:hover {
   color: #fff;
@@ -2518,6 +2518,50 @@ img {
     box-shadow: 0 0 2vw 0.4vw yellow;
   }
 }
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+}
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: #4db5ff;
+}
+
+.me {
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  background: linear-gradient(#4db5ff, transparent);
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -13,7 +13,7 @@ $container-w-ms: 90%;
 
 // Mixing it up
 @mixin transition1 {
-  transition: all 400ms ease;
+  transition: all 1s ease;
 }
 
 // General  Styles
@@ -68,7 +68,7 @@ a {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid $primary;
-  @include transition1();
+  @include transition1;
 
   &:hover {
     color: $color;
