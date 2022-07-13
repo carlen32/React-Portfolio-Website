@@ -1,0 +1,15 @@
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    div {
+      background: $background-variant;
+      padding: 2.4rem 5rem;
+      border-radius: 2rem;
+      border: 1px solid transparent;
+
+      
+    }
+}
+

@@ -77,7 +77,6 @@ img {
   .container {
     width: 86%;
   }
-
   section {
     margin-top: 6rem;
   }
@@ -86,7 +85,6 @@ img {
   .container {
     width: 90%;
   }
-
   section > h2 {
     margin-bottom: 2rem;
   }
@@ -2591,7 +2589,6 @@ img {
     grid-template-columns: 1fr;
     gap: 0;
   }
-
   .about__me {
     width: 50%;
     margin: 2rem auto 4rem;
@@ -2605,12 +2602,10 @@ img {
     width: 65%;
     margin: 0 auto 3rem;
   }
-
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-
   .about__content {
     text-align: center;
   }
@@ -2618,6 +2613,18 @@ img {
     margin: 1.5rem 0;
   }
 }
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.experience__container div {
+  background: #2c2c6c;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -2683,7 +2690,6 @@ header {
   header {
     height: 100vh;
   }
-
   .header__socials,
 .scroll__down {
     display: none;
