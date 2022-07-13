@@ -4,7 +4,7 @@ import Photo from "../../assets/img/babies.png"
 import HeaderSocials from "./HeaderSocials";
 const Header = () => {
   return (
-    <header>
+    <header id="#home">
       <div className="container header__container">
         <h5>Hello My Name</h5>
         <h1>Is David Carlen </h1>

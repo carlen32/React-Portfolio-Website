@@ -7,10 +7,10 @@ const HeaderSocials = () => {
       <a href="https://linkedin.com">
         <BsLinkedin />
       </a>
-      <a href="https://github.com">
+      <a href="https://github.com/carlen32">
         <BsGithub />
       </a>
-      <a href="https://facebook.com">
+      <a href="https://www.facebook.com/profile.php?id=100082530069752">
         <BsFacebook />
       </a>
     </div>

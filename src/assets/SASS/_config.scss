@@ -13,7 +13,7 @@ $container-w-ms: 90%;
 
 // Mixing it up
 @mixin transition1 {
-  transition: all 1s ease;
+  transition: all 500ms ease;
 }
 
 // General  Styles
@@ -36,15 +36,23 @@ h1 {
 }
 
 section {
+  height: 100vh;
   margin-top: 8rem;
-  section > h2 section > h5 {
-    text-align: center;
-    color: $light;
+}
+
+section {
+  h5, h2 {
+     text-align: center;
+  color: $light;
   }
-  section > h2 {
-    color: $primary;
-    margin-bottom: 3rem;
+ 
+}
+section {
+  h2{
+     color: $primary;
+  margin-bottom: 3rem;
   }
+ 
 }
 
 .text-light {
@@ -98,6 +106,7 @@ img{
 
   section{
     margin-top: 6rem;
+    
   }
 
 }

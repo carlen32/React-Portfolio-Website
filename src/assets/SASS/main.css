@@ -17,13 +17,16 @@ h1 {
 }
 
 section {
+  height: 100vh;
   margin-top: 8rem;
 }
-section section > h2 section > h5 {
+
+section h5, section h2 {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
-section section > h2 {
+
+section h2 {
   color: #4db5ff;
   margin-bottom: 3rem;
 }
@@ -34,7 +37,7 @@ section section > h2 {
 
 a {
   color: #4db5ff;
-  transition: all 1s ease;
+  transition: all 500ms ease;
 }
 a:hover {
   color: #fff;
@@ -50,7 +53,7 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid #4db5ff;
-  transition: all 1s ease;
+  transition: all 500ms ease;
 }
 .btn:hover {
   color: #fff;
@@ -90,7 +93,7 @@ img {
 }
 .firefly {
   position: fixed;
-  left: 50%;
+  left: 65%;
   top: 50%;
   width: 0.4vw;
   height: 0.4vw;
@@ -111,7 +114,7 @@ img {
 
 .firefly::before {
   background: black;
-  opacity: 0.4;
+  opacity: 0.1;
   -webkit-animation: drift ease alternate infinite;
           animation: drift ease alternate infinite;
 }
@@ -2518,6 +2521,103 @@ img {
     box-shadow: 0 0 2vw 0.4vw yellow;
   }
 }
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: all 500ms ease;
+}
+.about__me-image:hover {
+  transform: rotate(0deg);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  background: #2c2c6c;
+  border: 1px solid transparent;
+  padding: 2rem;
+  text-align: center;
+  transition: all 500ms ease;
+  border-radius: 2rem;
+}
+.about__card:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+.about__card h5 {
+  font-size: 0.95rem;
+  color: #fff;
+}
+.about__card small {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about__icon {
+  color: #4db5ff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__me p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+}
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -2543,7 +2643,8 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
+  right: 0;
+  bottom: 3rem;
 }
 .header__socials::after {
   content: "";
@@ -2560,6 +2661,67 @@ header {
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   background: linear-gradient(#4db5ff, transparent);
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.scroll__down {
+  position: absolute;
+  left: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+.scroll__down {
+    display: none;
+  }
+}
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  padding: 0.7rem, 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+nav a:hover {
+  background: #1f1f38;
+}
+
+nav a.active {
+  background: #1f1f38;
+  color: #fff;
 }
 
 * {
@@ -2582,11 +2744,11 @@ html {
 }
 
 body {
-  height: 100%;
   font-family: "Poppins", sans-serif;
   background: #1f1f38;
   color: #fff;
   line-height: 1.7;
   background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
   background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
