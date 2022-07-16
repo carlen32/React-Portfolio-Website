@@ -21,7 +21,7 @@ $quantity: 15;
   }
   .firefly::before {
     background: black;
-    opacity: .1;
+    opacity: 0;
     animation: drift ease alternate infinite;
   }
   .firefly::after {

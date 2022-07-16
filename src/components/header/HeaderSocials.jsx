@@ -1,16 +1,17 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com">
+      <a href="https://linkedin.com" target='_blank'>
         <BsLinkedin />
       </a>
-      <a href="https://github.com/carlen32">
+      <a href="https://github.com/carlen32" target='_blank'>
         <BsGithub />
       </a>
-      <a href="https://www.facebook.com/profile.php?id=100082530069752">
+      <a href="https://www.facebook.com/profile.php?id=100082530069752" target='_blank'>
         <BsFacebook />
       </a>
     </div>

@@ -14,15 +14,15 @@ const Services = () => {
   <ul className='service__list'>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p> HTML/CSS, JavaScript, GitHub, debugging, JS/Front-End frameworks</p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Basics of typography, color theory, Sketch, and Figma. </p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Basics of graphic design and branding </p>
   </li>
   </ul>
 </article>
@@ -34,15 +34,15 @@ const Services = () => {
   <ul className='service__list'>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Design, create and manage powerful websites </p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>analyze user needs to implement website content, graphics and performance </p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Capable of learning new trends that you want incorporated in website</p>
   </li>
   </ul>
 </article>
@@ -54,15 +54,19 @@ const Services = () => {
   <ul className='service__list'>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Create value proposition and pinpoint users objections</p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Identify top tasks and organize content in unique compelling ways.</p>
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Build content structure and edit to Client's approval. </p>
+  </li>
+  <li>
+    <AiOutlineCheck className='service__list-icon' />
+    <p> Testing, monitor, and refine content. </p>
   </li>
   </ul>
 </article>
@@ -73,3 +77,4 @@ const Services = () => {
 }
 
 export default Services
+
