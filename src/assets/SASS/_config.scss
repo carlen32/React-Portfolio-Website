@@ -9,7 +9,7 @@ $light: rgba(255, 255, 255, 0.6);
 // width of the container
 $container-w-lg: 75%;
 $container-w-md: 86%;
-$container-w-ms: 90%;
+$container-w-sm: 90%;
 
 // Mixing it up
 @mixin transition1 {
@@ -36,7 +36,6 @@ h1 {
 }
 
 section {
-  height: 100vh;
   margin-top: 8rem;
 }
 
@@ -114,7 +113,7 @@ img{
 // media queries small devices
 @media (max-width: 600px) {
     .container{
-      width: $container-w-ms;
+      width: $container-w-sm;
     }
   
     section > h2{
