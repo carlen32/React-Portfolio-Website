@@ -42,7 +42,7 @@ const Services = () => {
   </li>
   <li>
     <AiOutlineCheck className='service__list-icon' />
-    <p>Capable of learning new trends that you want incorporated in website</p>
+    <p>Capable of learning new trends that wants to be incorporated in website</p>
   </li>
   </ul>
 </article>

@@ -2675,6 +2675,56 @@ img {
     padding: 2rem 1rem;
   }
 }
+.container.testimonials__container {
+  width: 50%;
+  padding-bottom: 4rem;
+}
+
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid rgba(77, 181, 255, 0.4);
+}
+
+.testimonial {
+  background: #2c2c6c;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.client__review {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: #4db5ff;
+}
+
+@media (max-width: 600px) {
+  .container.testimonials__container {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .container.testimonials__container {
+    width: 90%;
+  }
+  .client__review {
+    width: 90%;
+  }
+}
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -2866,7 +2916,7 @@ nav a.active {
 }
 .service .service__list .service__list-icon {
   position: absolute;
-  left: -15px;
+  left: -20px;
   color: #4db5ff;
   margin-top: 2px;
 }
