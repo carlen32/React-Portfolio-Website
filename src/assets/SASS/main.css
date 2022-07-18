@@ -20,22 +20,22 @@ section {
   margin-top: 8rem;
 }
 
-section h5, section h2 {
+section > h5, h2 {
   text-align: center;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
 }
 
-section h2 {
-  color: #4db5ff;
+section > h2 {
+  color: rgb(217, 191, 169);
   margin-bottom: 3rem;
 }
 
 .text-light {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
 }
 
 a {
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
   transition: all 500ms ease;
 }
 a:hover {
@@ -47,11 +47,11 @@ a:hover {
   width: -moz-max-content;
   width: max-content;
   display: inline-block;
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid #4db5ff;
+  border: 1px solid rgb(217, 191, 169);
   transition: all 500ms ease;
 }
 .btn:hover {
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: #4db5ff;
+  background-color: rgb(217, 191, 169);
   color: #1f1f38;
 }
 
@@ -2528,7 +2528,7 @@ img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  background: linear-gradient(45deg, transparent, rgb(217, 191, 169), transparent);
   display: grid;
   place-items: center;
 }
@@ -2551,7 +2551,7 @@ img {
 }
 
 .about__card {
-  background: #2c2c6c;
+  background: rgb(59, 75, 89);
   border: 1px solid transparent;
   padding: 2rem;
   text-align: center;
@@ -2560,7 +2560,7 @@ img {
 }
 .about__card:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: rgba(142, 168, 191, 0.4);
   cursor: default;
 }
 .about__card h5 {
@@ -2569,18 +2569,18 @@ img {
 }
 .about__card small {
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
 }
 
 .about__icon {
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
 .about__content p {
   margin: 2rem 0 2.6rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
 }
 
 @media (max-width: 1024px) {
@@ -2612,6 +2612,68 @@ img {
     margin: 1.5rem 0;
   }
 }
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: rgb(59, 75, 89);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+.contact__option:hover {
+  background: transparent;
+  border-color: rgba(142, 168, 191, 0.4);
+}
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(142, 168, 191, 0.4);
+  resize: none;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .container.contact__container {
+    width: 90%;
+  }
+}
 .experience__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2619,7 +2681,7 @@ img {
 }
 
 .experience__container > div {
-  background: #2c2c6c;
+  background: rgb(59, 75, 89);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -2627,14 +2689,14 @@ img {
 }
 .experience__container > div:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: rgba(142, 168, 191, 0.4);
   cursor: default;
 }
 
 .experience__container > div h3 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
 }
 
 .experience__content {
@@ -2650,7 +2712,7 @@ img {
 
 .experience__details-icon {
   margin-top: 6px;
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
 }
 
 @media (max-width: 1024px) {
@@ -2686,11 +2748,11 @@ img {
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  border: 0.4rem solid rgba(77, 181, 255, 0.4);
+  border: 0.4rem solid rgba(142, 168, 191, 0.4);
 }
 
 .testimonial {
-  background: #2c2c6c;
+  background: rgb(59, 75, 89);
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
@@ -2701,7 +2763,7 @@ img {
 }
 
 .client__review {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
   font-weight: 300;
   display: block;
   width: 80%;
@@ -2709,7 +2771,7 @@ img {
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-  background: #4db5ff;
+  background: rgb(217, 191, 169);
 }
 
 @media (max-width: 600px) {
@@ -2757,17 +2819,17 @@ header {
   content: "";
   width: 1px;
   height: 2rem;
-  background-color: #4db5ff;
+  background-color: rgb(217, 191, 169);
 }
 
 .me {
-  width: 22rem;
+  width: 32rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 16rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  background: linear-gradient(#4db5ff, transparent);
+  background: linear-gradient(rgb(217, 191, 169), transparent);
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
@@ -2785,6 +2847,17 @@ header {
   header {
     height: 68vh;
   }
+  .me {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    background: linear-gradient(rgb(217, 191, 169), transparent);
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }
 }
 @media (max-width: 600px) {
   header {
@@ -2795,13 +2868,73 @@ header {
     display: none;
   }
 }
+footer {
+  background: rgb(217, 191, 169);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+footer a {
+  color: #1f1f38;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.footer__socials a {
+  background: #1f1f38;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+.footer__socials a:hover {
+  background: transparent;
+  color: #1f1f38;
+  border-color: #1f1f38;
+}
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: #1f1f38;
+}
+
+@media (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer__socials {
+    margin-bottom: 2.4rem;
+  }
+}
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: block;
-  padding: 0.7rem, 1.7rem;
+  padding: 0.7rem 1.7rem;
   z-index: 2;
   position: fixed;
   left: 50%;
@@ -2813,12 +2946,13 @@ nav {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
+
 nav a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(176, 193, 217, 0.4);
   font-size: 1.1rem;
 }
 nav a:hover {
@@ -2826,8 +2960,8 @@ nav a:hover {
 }
 
 nav a.active {
-  background: #1f1f38;
-  color: #fff;
+  background: rgb(217, 191, 169);
+  color: #1f1f38;
 }
 
 .container__projects {
@@ -2837,14 +2971,14 @@ nav a.active {
 }
 
 .projects__item {
-  background: #2c2c6c;
+  background: rgb(59, 75, 89);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
 }
 .projects__item:hover {
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: rgba(142, 168, 191, 0.4);
   background: transparent;
 }
 .projects__item h3 {
@@ -2881,9 +3015,9 @@ nav a.active {
 }
 
 .service {
-  background: #2c2c6c;
+  background: rgb(59, 75, 89);
   border-radius: 0 0 2rem 2rem;
-  border: 1px solid #4db5ff;
+  border: 1px solid rgb(217, 191, 169);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2891,11 +3025,11 @@ nav a.active {
 }
 .service:hover {
   background: transparent;
-  border-color: rgba(77, 181, 255, 0.4);
+  border-color: rgba(142, 168, 191, 0.4);
   cursor: default;
 }
 .service .service__head {
-  background: #4db5ff;
+  background: rgb(217, 191, 169);
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
@@ -2917,7 +3051,7 @@ nav a.active {
 .service .service__list .service__list-icon {
   position: absolute;
   left: -20px;
-  color: #4db5ff;
+  color: rgb(217, 191, 169);
   margin-top: 2px;
 }
 .service .service__list p {

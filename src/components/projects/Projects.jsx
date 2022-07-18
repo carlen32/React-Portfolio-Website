@@ -3,7 +3,7 @@ import React from "react";
 import Data from './Data';
 
 const Projects = () => {
-  console.log(Data)
+  // console.log(Data)
   return (
     <section id="projects">
       <h5>My Recent Work</h5>

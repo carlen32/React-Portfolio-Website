@@ -5,19 +5,19 @@ import avatar3 from "../../assets/img/avatar3.webp";
 const Data = [
   {
     image: avatar1,
-    name: "That Man",
-    review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ipsum repudiandae error similique consequuntur nulla maxime. Debitis nisi quaerat eligendi? Non ex eius itaque quas modi at eveniet deleniti fuga.",
+    name: "You In The Future",
+    review: "I am so fortunate to have hired David Carlen as a junior web developer. He is energetic, optimistic, and always willing to learn. One of the best hires I ever made!",
   },
   {
     image: avatar2,
     name: "Jessica Jax",
     github: "https://github.com/carlen32",
-    review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ipsum repudiandae error similique consequuntur nulla maxime. Debitis nisi quaerat eligendi? Non ex eius itaque quas modi at eveniet deleniti fuga.",
+    review: "David Carlen is detail oriented, organized, and reliable",
   },
   {
     image: avatar3,
     name: "Mafia Man",
-    review: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ipsum repudiandae error similique consequuntur nulla maxime. Debitis nisi quaerat eligendi? Non ex eius itaque quas modi at eveniet deleniti fuga.",
+    review: "David Carlen is a up and coming web developer and is always putting in the time to sharpen his skills",
   },
 ];
 

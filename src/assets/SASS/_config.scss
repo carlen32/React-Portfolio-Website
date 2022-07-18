@@ -1,11 +1,24 @@
 // colors
 $background: #1f1f38;
-$background-variant: #2c2c6c;
-$primary: #4db5ff;
-$primary-variant: rgba(77, 181, 255, 0.4);
+$background-variant: rgb(59, 75, 89);
+$primary: rgb(217, 191, 169);
+$primary-variant: rgba(142, 168, 191, 0.4);
 $color: #fff;
-$light: rgba(255, 255, 255, 0.6);
+$light: rgba(176, 193, 217, 0.4);
 
+
+
+
+// $background: #1f1f38;
+// $background-variant: #2c2c6c;
+// $primary: #4db5ff;
+// $primary-variant: rgba(77, 181, 255, 0.4);
+// $color: #fff;
+// $light: rgba(255, 255, 255, 0.6);
+// RGB(217, 191, 169)
+// RGB(142, 168, 191)
+// RGB(59, 75, 89)
+// RGB(176, 193, 217)
 // width of the container
 $container-w-lg: 75%;
 $container-w-md: 86%;
@@ -39,18 +52,18 @@ section {
   margin-top: 8rem;
 }
 
-section {
-  h5, h2 {
+section > h5, h2 {
+  
      text-align: center;
   color: $light;
-  }
+  
  
 }
-section {
-  h2{
+section > h2 {
+  
      color: $primary;
   margin-bottom: 3rem;
-  }
+  
  
 }
 
@@ -93,6 +106,7 @@ img{
     display: block;
     width: 100%;
     object-fit: cover;
+  
 }
 
 
